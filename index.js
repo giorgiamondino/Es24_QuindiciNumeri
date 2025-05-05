@@ -10,7 +10,7 @@ function CreaMatrice() {
         for (let j = 0; j < 4; j++) {
             const div = document.createElement("div");
             div.addEventListener("click", divClick);
-            div.id = `div-${i / 4}-${i % 4}`;
+            div.id = `div-${i / 4}-${j / 4}`;
             wrapper.appendChild(div);
         }
     }
